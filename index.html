@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now....</h3>
+    </div>
+    <div class="hero-bg">
+
+        <section class="top">
+            <header>
+                <a href="#">Intelligence.io</a>
+            </header>
+
+            <h1><span>Bias Free</span> AI Model For Your Company</h1>
+
+            <p>By using the resampling techniques to remove representative bias our model will perform better and achieve higher results for precision and recall scores. </p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                         <label for="City">Enter your City:</label>
+                         <input type="text" name="City" id="City">
+                         <p>Example: "Bogura"</p>
+                    </div>    
+
+
+                    <input type="button" value="Balanced datasets." id="ctn-btn" > 
+
+                </form>
+            </div>
+         </section>
+    
+    </div>
+
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Background & Vision Overview</h2>
+            <p>One example of bias in algorithmic hiring is from the multinational e-commerce company, Amazon. Amazon's recruitment tool was suspended after the AI system they built was found to be biased against women due to the number of hired men outweighing the number of hired women in the data. The dataset failed to provide sufficient information for the algorithm to learn from because of the predominantly male resumes over a 10-year period.
+
+                Dataset imbalances, representative bias, data mismatch, etc, are all common problems that businesses face in integrating AI systems into their business models. We plan to give a comprehensive solution to solve biases in data, using the right method to train and test a model, and using the right metrics for evaluating a model. We also plan to give solutions for integrating AI systems that are able to aid and collaborate with human employees in their decision-making skills.
+            </p>
+        </div>
+        <img src="images\computer.jpg" alt="Picture of Data transfer">
+
+     </section>
+
+
+     <script>
+         let btn =document.getElementById('cta-btn')
+         let overlay =document.getElementById('overlay')
+
+         btn.addEventListener('click',() =>{
+             overlay.style.display = "grid";
+             overlay.classList.add('animate-overlay')
+                  
+         })
+
+     </script>
+</body>
+</html>
